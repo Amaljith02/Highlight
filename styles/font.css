@@ -1,0 +1,64 @@
+/* ----------Poppins----------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins {
+    font-family: "Poppins", serif;
+    font-style: normal;
+}
+
+/* ---------------------- */
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('../font/ClashDisplay-Medium.woff') format('woff'),
+        url('../font/ClashDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('../font/ClashDisplay-Bold.woff') format('woff'),
+        url('../font/ClashDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('../font/ClashDisplay-Semibold.woff') format('woff'),
+        url('../font/ClashDisplay-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('../font/ClashDisplay-Regular.woff') format('woff'),
+        url('../font/ClashDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('../font/ClashDisplay-Light.woff') format('woff'),
+        url('../font/ClashDisplay-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('../font/ClashDisplay-Extralight.woff') format('woff'),
+        url('../font/ClashDisplay-Extralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}

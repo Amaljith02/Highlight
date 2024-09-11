@@ -2,15 +2,11 @@
 @import "font.css ";
 @import "base.css";
 
-
 .header_sec {
     width: 100%;
     position: absolute;
     top: 0;
 }
-
-
-
 
 .header_container {
     display: flex;
@@ -42,20 +38,11 @@
 }
 
 .header_download_btn>img {
-
-
     height: auto;
     width: 100%;
     object-fit: cover;
     display: block;
-
 }
-
-
-
-
-
-
 
 .banner_body {
     width: 100%;
@@ -64,6 +51,7 @@
 .banner_sub_body {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
 }
 
@@ -83,14 +71,13 @@
 
 .banner_sub_body_text_sec>p {
     font-size: 20px;
-    /* line-height: 20px; */
-    font-size: 1.25rem;
+    line-height: 20px;
+    /* font-size: 1.25rem; */
     font-weight: 400;
 }
 
 .banner_sub_body_img_sec {
     width: 50%;
-    padding-top: 200px;
 }
 
 .banner_sub_body_img {
@@ -139,7 +126,9 @@
 .pg2_text_background {
     position: absolute;
     height: auto;
-    width: 170px;
+    /* width: 170px; */
+    width: 11%;
+
     top: 50%;
     left: 50%;
     transform: translateY(-50%) translateX(-50%);
@@ -189,6 +178,8 @@
 }
 
 .a_platform_build_for_text_btn {
+    display: inline-block;
+
     padding: 7px 21px 7px 35px;
     background: rgba(255, 242, 171, 0.11);
     text-decoration: none;
@@ -265,14 +256,23 @@
 
 .what_you_can_do_head_download_btn {
     background: #000000;
+    display: inline-flex;
     border-radius: 6px;
     border: 1px solid transparent;
-    width: 235px;
-    height: 48px;
+
+    padding: 11px 43px;
+    text-decoration: none;
     font-size: 16px;
     font-weight: 500;
     color: #b7bb32;
     font-family: "Poppins";
+    transition: all 0.3s ease;
+}
+
+.what_you_can_do_head_download_btn:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid #b7bb32;
 }
 
 .what_you_can_do_card_sec {
@@ -360,13 +360,20 @@
     display: inline-block;
     background: #000000;
     border-radius: 6px;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     text-decoration: none;
     padding: 10px 20px;
     color: #b7bb32;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.how_your_organization_container>a:hover {
+    background-color: transparent;
+    color: black;
+    border: 1px solid #b7bb32;
 }
 
 .how_your_organization_card_container {
@@ -572,6 +579,7 @@
     font-size: 14px;
     font-weight: 400;
     padding-right: 1%;
+
 }
 
 /* //////// */
@@ -615,12 +623,16 @@
     padding: 8px 75px;
     background-color: #fff;
     cursor: pointer;
+    font-size: 16px;
+
 }
 
 .upgraded_to_premium_tabs_toggle_active {
     cursor: pointer;
     padding: 8px 75px;
     background-color: #ffffff00;
+    font-size: 16px;
+
 }
 
 .upgraded_to_premium_tab_card_sec {
@@ -679,7 +691,8 @@
 .upgraded_to_premium_tab_card_price>h5 {
     color: #000000;
     font-family: "Poppins", sans-serif;
-    font-size: 38px;
+    /* font-size: 38px; */
+    font-size: 2.375rem;
     letter-spacing: 0.45px;
     font-weight: 600;
     line-height: 45px;
@@ -743,6 +756,12 @@
     border: 2px solid #d3d3d3c4;
     text-decoration: none;
     justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.upgraded_to_premium_tab_card_btn:hover {
+    color: white;
+    background-color: #9da116;
 }
 
 .upgraded_to_premium_tab_card2 {
@@ -841,11 +860,14 @@
     width: 225px;
     height: auto;
     position: absolute;
+    z-index: 1;
     left: 20%;
 }
 
 .download_app_phone_img2 {
     width: 265px;
+    position: absolute;
+
     height: auto;
 }
 
@@ -943,7 +965,6 @@
     object-fit: cover;
 }
 
-
 .we_have_got_the_answer_accordion_panel {
     color: #7d7d7d;
     text-align: left;
@@ -979,6 +1000,7 @@
     color: #000000;
     text-align: center;
     font-size: 24px;
+    /* font-size: 1.5rem; */
     letter-spacing: 0.47px;
     font-weight: 500;
 }
@@ -998,7 +1020,6 @@
 
 /* /////////////////// */
 
-
 .footer_section {
     width: 100%;
 }
@@ -1015,7 +1036,6 @@
 
 .footer_logo_sec {
     width: 25%;
-
 }
 
 .footer_logo {
@@ -1065,12 +1085,10 @@
     width: 100%;
     object-fit: cover;
     display: block;
-
 }
 
 .footer_contact_sec {
     /* width: 30%; */
-
 }
 
 .footer_contact_sec>h4 {
@@ -1080,10 +1098,18 @@
     font-weight: 500;
 }
 
+.footer_contact_sec>a,
 .footer_contact_sec>P {
+    text-decoration: none;
+    display: block;
     color: #2e2e2e;
     font-size: 14px;
     font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.footer_contact_sec>a:hover {
+    color: #ffffff;
 }
 
 .footer_social_media_btn_sec {
@@ -1097,15 +1123,25 @@
     display: block;
     height: auto;
     width: 30px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.footer_social_media_btn:hover {
+    background-color: black;
+}
+
+.footer_social_media_btn:hover.footer_social_media_btn>img {
+    filter: invert(1);
 }
 
 .footer_social_media_btn>img {
+    transition: all 0.3s ease;
 
     display: block;
     object-fit: cover;
     height: auto;
     width: 100%;
-
 }
 
 .footer_bottom_container {
@@ -1116,8 +1152,6 @@
 }
 
 .footer_bottom_container>p {
-
-
     color: #2e2e2e;
     text-align: left;
     font-size: 14px;
@@ -1132,7 +1166,6 @@
     font-weight: 400;
     list-style: none;
     align-items: center;
-
 }
 
 .footer_bottom_terms_sec>li {
@@ -1146,17 +1179,257 @@
 
 .footer_bottom_terms_sec>li>a {
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-
+.footer_bottom_terms_sec>li>a:hover {
+    color: #ffffff;
+}
 
 /* ----------Resposnive--------- */
 
+@media screen and (max-width: 1600px) {
+    .header_logo {
+        width: 140px;
+    }
 
-@media screen and (max-width:1600px) {
-    
+    .header_download_btn {
+        width: 140px;
+    }
+
+    .banner_sub_body_text_sec>p {
+        font-size: 17px;
+        line-height: 23px;
+    }
+
+    .how_your_organization_sub_card_right>h5,
+    .how_your_organization_sub_card_left>h5 {
+        font-size: 22px;
+    }
+
+    .testimonial_card_profile {
+        gap: 15px;
+    }
+
+    .upgraded_to_premium_tab_card_price>h5 {
+        line-height: 35px;
+    }
+
+    .upgraded_to_premium_tab_card_price>span {
+        font-size: 16px;
+    }
+
+    .we_have_got_the_answer_still_have_question_sec>h4 {
+        font-size: 21px;
+    }
+
+    .footer_logo_sec {
+        width: 25%;
+        padding-left: 5%;
+        box-sizing: border-box;
+    }
+
+    .footer_contact_sec {
+        box-sizing: border-box;
+        padding-right: 5%;
+    }
+}
+
+@media screen and (max-width:1440px) {
+    .banner_sub_body_text_sec>p {
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .banner_sub_body_text_sec {
+        width: 55%;
+        padding-top: 350px;
+        padding-bottom: 240px;
+    }
+
+    .banner_sub_body_img_sec {
+        width: 45%;
+    }
+
+    .a_platform_build_for_img_sec {
+        width: 40%;
+    }
+
+    .we_have_got_the_answer_img {
+        width: 85%;
+    }
+
+    .a_platform_build_for_text_sec {
+        width: 56%;
+    }
+
+    .what_you_can_do_head_download_btn {
+        padding: 9px 28px;
+    }
+
+    .a_platform_build_for_text_sec>h3 {
+        line-height: 50px;
+    }
+
+    .download_app_phone_img2 {
+        top: 10%;
+        width: 50%;
+    }
+
+    .download_app_phone_img1 {
+        bottom: -10%;
+        left: 5%;
+        width: 43%;
+    }
+}
+
+@media screen and (max-width:1366px) {
+    .banner_sub_body_text_sec>p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .header_download_btn {
+        width: 120px;
+    }
+
+    .banner_sub_body_img_sec {
+        width: 40%;
+    }
+
+    .banner_sub_body_text_sec {
+        padding-top: 330px;
+        padding-bottom: 230px;
+    }
+
+    .what_you_can_do_card>h4 {
+        font-size: 19px;
+    }
+
+    .what_you_can_do_head_download_btn {
+        padding: 8px 22px;
+        font-size: 15px;
+    }
 
 
+    .how_your_organization_container>a {
+        border-radius: 6px;
+        padding: 7px 17px;
+        font-size: 15px;
+    }
 
-    
+    .how_your_organization_sub_card_left,
+    .how_your_organization_sub_card_right {
+        height: 110px;
+        padding: 0 5%;
+        border-radius: 7px;
+    }
+
+    .how_your_organization_sub_card_right>h5,
+    .how_your_organization_sub_card_left>h5 {
+        font-size: 20px;
+    }
+
+    .how_your_organization_card_img {
+        width: 185px;
+    }
+
+    .testimonial_card_sec {
+        display: flex;
+        justify-content: space-between;
+        gap: 1%;
+    }
+
+    .upgraded_to_premium_tabs_toggle,
+    .upgraded_to_premium_tabs_toggle_active {
+        padding: 7px 55px;
+        font-size: 15px;
+    }
+
+    .special_btn {
+        font-size: 15px;
+        border-radius: 50px;
+        padding: 6px 17px 6px 33px;
+    }
+
+    .special_btn:before {
+        height: 7px;
+        width: 7px;
+        left: 13%;
+    }
+
+    .we_have_got_the_answer_accordion_body {
+        margin-bottom: 20px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .we_have_got_the_answer_accordion {
+        padding: 10px 0 10px 1%;
+        margin: 0 !important;
+        font-size: 16px;
+        gap: 15px;
+    }
+
+    .we_have_got_the_answer_still_have_question_sec>h4 {
+        font-size: 18px;
+    }
+
+    .we_have_got_the_answer_still_have_question_sec>p {
+        font-size: 15px;
+        line-height: 25px;
+        letter-spacing: 0.47px;
+    }
+
+    .footer_logo {
+        height: auto;
+        width: 180px;
+    }
+
+}
+
+@media screen and (max-width:1280px) {
+    .header_logo {
+        width: 120px;
+    }
+
+    .banner_sub_body_text_sec {
+        width: 60%;
+        padding-top: 315px;
+        padding-bottom: 190px;
+    }
+
+    .banner_sub_body_img_sec {
+        width: 35%;
+    }
+
+    .a_platform_build_for_text_btn {
+        padding: 5px 18px 5px 30px;
+        font-size: 15px;
+        border-radius: 50px;
+    }
+
+    .a_platform_build_for_text_btn::before {
+        height: 8px;
+        width: 8px;
+        left: 8%;
+    }
+
+    .a_platform_build_for_text_sec>h3 {
+        line-height: 40px;
+    }
+
+    .what_you_can_do_title_head2>p {
+        font-size: 15px;
+    }
+
+    .how_your_organization_sub_card_right>h5,
+    .how_your_organization_sub_card_left>h5 {
+        font-size: 19px;
+    }
+
+    .footer_logo {
+        height: auto;
+        width: 150px;
+    }
 }

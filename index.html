@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Highlight</title>
     <link rel="icon" type="image/x-icon" href="images/favicon1.png" />
-
+    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
 
@@ -52,7 +52,7 @@
         </div>
 
         <div class="banner_sub_body_img_sec">
-          <div class="banner_sub_body_img">
+          <div class="banner_sub_body_img" data-aos="fade-up">
             <img src="images/banner-img1.png" alt="" />
           </div>
         </div>
@@ -85,12 +85,12 @@
     >
       <div class="a_platform_build_for_container container">
         <div class="a_platform_build_for_img_sec">
-          <div class="a_platform_build_for_img">
+          <div class="a_platform_build_for_img" data-aos="fade-up">
             <img src="images/a-platform-build-for-img.png" alt="" />
           </div>
         </div>
 
-        <div class="a_platform_build_for_text_sec w_50 pt_100">
+        <div class="a_platform_build_for_text_sec pt_100">
           <a href="/" class="a_platform_build_for_text_btn"> About Highlight</a>
           <h3 class="pt_25">
             A Platform Built for
@@ -134,9 +134,9 @@
               gaining recognition while connecting with specialists across UAE
               on our dynamic platform.
             </p>
-            <button class="what_you_can_do_head_download_btn mt_20">
+            <a href="" class="what_you_can_do_head_download_btn mt_20">
               Download the App
-            </button>
+            </a>
           </div>
         </div>
 
@@ -489,7 +489,7 @@
     <section class="we_have_got_the_answer_section">
       <div class="we_have_got_the_answer_container container pt_100 pb_100">
         <div class="we_have_got_the_answer_title_sec">
-          <span class="special_btn"> Pricing </span>
+          <span class="special_btn"> FAQ </span>
           <h3 class="pt_20">We’ve Got the Answers</h3>
         </div>
 
@@ -598,7 +598,7 @@
       </div>
     </section>
 
-    <!-- ------We've got the answers section------ -->
+    <!-- ------Footer section------ -->
     <section
       class="footer_section"
       style="
@@ -636,8 +636,10 @@
             Business Hub - Musaffah <br />
             ICAD I - Abu Dhabi
           </p>
-          <p style="text-decoration: underline">info@highlightme.ae</p>
-          <p>+123-xxx-xxxx</p>
+          <a href="" style="text-decoration: underline" class="mb_20"
+            >info@highlightme.ae</a
+          >
+          <a href="" class="mb_20">+123-xxx-xxxx</a>
 
           <ul class="footer_social_media_btn_sec">
             <li>
@@ -690,52 +692,64 @@
         </ul>
       </div>
     </section>
-  </body>
-  <script>
-    var acc_sec = document.getElementsByClassName(
-      "we_have_got_the_answer_accordion_sec"
-    );
-    var acc = document.getElementsByClassName(
-      "we_have_got_the_answer_accordion"
-    );
-    var i;
 
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function () {
-        // Remove active class from all accordion headers
-        for (var j = 0; j < acc.length; j++) {
-          acc[j].classList.remove("active");
-          var panel = acc[j].nextElementSibling;
-          panel.style.minHeight = 0; // Close the panel
+    <!-- ------Page Ends------ -->
 
-          // Reset the image icon and remove active class from images
-          var img = acc[j].querySelector("img");
-          if (img) {
-            img.classList.remove("accordion_img_active"); // Remove active class
-            img.src = "images/accordion-plus.png"; // Reset to plus icon
+    <script>
+      var acc_sec = document.getElementsByClassName(
+        "we_have_got_the_answer_accordion_sec"
+      );
+      var acc = document.getElementsByClassName(
+        "we_have_got_the_answer_accordion"
+      );
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          // Remove active class from all accordion headers
+          for (var j = 0; j < acc.length; j++) {
+            acc[j].classList.remove("active");
+            var panel = acc[j].nextElementSibling;
+            panel.style.minHeight = 0; // Close the panel
+
+            // Reset the image icon and remove active class from images
+            var img = acc[j].querySelector("img");
+            if (img) {
+              img.classList.remove("accordion_img_active"); // Remove active class
+              img.src = "images/accordion-plus.png"; // Reset to plus icon
+            }
           }
-        }
-        // Add active class to the clicked header
-        this.classList.toggle("active");
+          // Add active class to the clicked header
+          this.classList.toggle("active");
 
-        // Toggle active class for the clicked accordion
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
+          // Toggle active class for the clicked accordion
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
 
-        // If the panel is closed, open it with smooth transition
-        if (panel.style.minHeight === "0px" || !panel.style.minHeight) {
-          panel.style.minHeight = "100px"; // Expand the panel (adjust height accordingly)
-          panel.style.overflowY = "scroll"; // Expand the panel (adjust height accordingly)
-        } else {
-          panel.style.minHeight = "0"; // Collapse the panel
-          // Change image icon to minus and add active class to image
-          var img = this.querySelector("img");
-          if (img) {
-            img.classList.add("accordion_img_active"); // Add active class
-            img.src = "images/accordion-minus.png"; // Change to minus icon
+          // If the panel is closed, open it with smooth transition
+          if (panel.style.minHeight === "0px" || !panel.style.minHeight) {
+            panel.style.minHeight = "100px"; // Expand the panel (adjust height accordingly)
+          } else {
+            panel.style.minHeight = "0"; // Collapse the panel
+            // Change image icon to minus and add active class to image
+            var img = this.querySelector("img");
+            if (img) {
+              img.classList.add("accordion_img_active"); // Add active class
+              img.src = "images/accordion-minus.png"; // Change to minus icon
+            }
           }
-        }
+        });
+      }
+    </script>
+    <script src="../../assets/vendor/aos/dist/aos.js"></script>
+    <script>
+      $(document).on("ready", function () {
+        // initialization of aos
+        AOS.init({
+          duration: 650,
+          once: true,
+        });
       });
-    }
-  </script>
+    </script>
+  </body>
 </html>

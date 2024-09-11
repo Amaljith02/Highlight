@@ -25,6 +25,33 @@ h5 {
 
 }
 
+
+
+.special_btn {
+    color: #cdc931;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    background: rgba(255, 242, 171, 0.11);
+    border-radius: 50px;
+    border: 1px solid #cdc931;
+    padding: 7px 20px 7px 35px;
+    display: inline-flex;
+}
+
+.special_btn:before {
+
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: #d7d459;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15%;
+}
+
 @media only screen and (-webkit-min-device-pixel-ratio: 1.25),
 only screen and (min-resolution: 120dpi),
 only screen and (min-resolution: 1.25dppx) {

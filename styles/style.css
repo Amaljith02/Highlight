@@ -383,6 +383,7 @@
 .how_your_organization_card_container {
     width: 95%;
     min-height: 700px;
+    padding-top: 0;
 
     margin-left: auto;
     margin-right: auto;
@@ -444,10 +445,10 @@
 
 .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left>p,
 .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right>p {
-    opacity: 1;
-    /* Make the element visible */
-    max-height: 200px;
 
+    opacity: 1;
+    padding-top: 20px;
+    max-height: 200px;
 }
 
 .how_your_organization_sub_card_left:hover,
@@ -1356,6 +1357,11 @@
         min-height: 900px;
     }
 
+    .how_your_organization_sub_card_left>p,
+    .how_your_organization_sub_card_right>p {
+        font-size: 15px;
+    }
+
     .header_logo {
         width: 140px;
     }
@@ -1420,6 +1426,31 @@
     .banner_sub_body_text_sec {
         width: 55%;
 
+    }
+
+    .how_your_organization_sub_card_left,
+    .how_your_organization_sub_card_right {
+        width: 90%;
+    }
+
+    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(1)::after,
+    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(2)::after,
+    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(3)::after {
+        content: "";
+        position: absolute;
+        opacity: 1;
+        left: 100%;
+        width: calc(100% - 89%);
+    }
+
+    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(1)::after,
+    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(2)::after,
+    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(3)::after {
+        content: "";
+        position: absolute;
+        opacity: 1;
+        right: 100%;
+        width: calc(100% - 89%);
     }
 
     .banner_sub_body_img_sec {
@@ -1615,6 +1646,14 @@
         font-size: 19px;
     }
 
+    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(1)::after,
+    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(3)::after,
+
+    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(1)::after,
+    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(3)::after {
+        height: 150px;
+    }
+
     .footer_logo {
         height: auto;
         width: 150px;
@@ -1717,6 +1756,12 @@
         gap: 2%;
         box-sizing: border-box;
         padding: 0 5%;
+    }
+
+    .how_your_organization_sub_card_left>p,
+    .how_your_organization_sub_card_right>p {
+        font-size: 13px;
+        line-height: 20px;
     }
 
     .upgraded_to_premium_tab_card_head {

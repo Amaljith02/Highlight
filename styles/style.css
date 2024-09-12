@@ -463,6 +463,41 @@
     text-align: center;
 }
 
+
+.how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(1)::before,
+.how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(2)::before,
+.how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(3)::before {
+
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 1px solid #c5c200;
+    width: 25%;
+    right: -50%;
+}
+
+
+.how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(1)::before {
+
+    width: 25%;
+    height: 170px;
+
+
+}
+
+.how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(3)::before {
+    top: unset;
+    bottom: 50%;
+
+    width: 25%;
+    height: 170px;
+    border-top: 1px solid #c5c200;
+    border-bottom: unset;
+
+
+
+}
+
 .how_your_organization_sub_card_right:nth-child(1)::after,
 .how_your_organization_sub_card_right:nth-child(2)::after,
 .how_your_organization_sub_card_right:nth-child(3)::after,
@@ -541,7 +576,7 @@
     filter: drop-shadow(0px 4px 5px white);
 }
 
-.how_your_organization_card_sec_center::before {
+/* .how_your_organization_card_sec_center::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -550,7 +585,7 @@
     top: 50%;
     transform: translateY(-50%);
     background-color: #c5c200;
-}
+} */
 
 
 .how_your_organization_card_sec_right {
@@ -633,6 +668,39 @@
 }
 
 
+.how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(1)::before,
+.how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(2)::before,
+.how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(3)::before {
+
+    content: '';
+    position: absolute;
+    top: 50%;
+    border-bottom: 1px solid #c5c200;
+    width: 25%;
+    left: -50%;
+}
+
+
+.how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(1)::before {
+
+    width: 25%;
+    height: 170px;
+
+
+}
+
+.how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(3)::before {
+    top: unset;
+    bottom: 50%;
+
+    width: 25%;
+    height: 170px;
+    border-top: 1px solid #c5c200;
+    border-bottom: unset;
+
+
+
+}
 
 
 
@@ -1488,6 +1556,46 @@
         left: 5%;
         width: 43%;
     }
+
+    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(1)::before,
+    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(2)::before,
+    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(3)::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        border-bottom: 1px solid #c5c200;
+        width: 25%;
+        left: -36%;
+    }
+
+    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(3)::before {
+        top: unset;
+        bottom: 50%;
+        width: 25%;
+        height: 170px;
+        border-top: 1px solid #c5c200;
+        border-bottom: unset;
+    }
+
+    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(1)::before,
+    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(2)::before,
+    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(3)::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        border-bottom: 1px solid #c5c200;
+        width: 25%;
+        right: -36%;
+    }
+
+    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(3)::before {
+        top: unset;
+        bottom: 50%;
+        width: 25%;
+        height: 170px;
+        border-top: 1px solid #c5c200;
+        border-bottom: unset;
+    }
 }
 
 @media screen and (max-width:1366px) {
@@ -1648,10 +1756,9 @@
 
     .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(1)::after,
     .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(3)::after,
-
     .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(1)::after,
     .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(3)::after {
-        height: 150px;
+        height: 169px;
     }
 
     .footer_logo {
@@ -1749,6 +1856,12 @@
     .upgraded_to_premium_tab_card_price>h5 {
         line-height: 30px;
         font-size: 23px;
+    }
+
+    .how_your_organization_card_container {
+
+        width: 100%;
+        min-height: 600px;
     }
 
     .upgraded_to_premium_tab_card_sec {
@@ -1896,6 +2009,21 @@
         width: 45%;
     }
 
+    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(1)::before,
+    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(3)::before,
+
+    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(1)::before,
+    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(3)::before {
+        height: 120px;
+    }
+
+    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(1)::after,
+    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(3)::after,
+    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(1)::after,
+    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(3)::after {
+        height: 120px;
+    }
+
     .pg2_text_container>h3 {
         line-height: 30px;
         font-size: 3rem;
@@ -2029,6 +2157,15 @@
     .a_platform_build_for_text_sec>p {
         font-size: 14px;
     }
+
+    .how_your_organization_card_container {
+        min-height: 510px;
+        margin-top: 20px;
+    }
+
+    .how_your_organization_card_img {
+        width: 120px;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -2124,7 +2261,8 @@
 
     .how_your_organization_sub_card_right>h5,
     .how_your_organization_sub_card_left>h5 {
-        font-size: 16px;
+        font-size: 18px;
+        text-align: center;
     }
 
     .download_app_text_sec {
@@ -2157,6 +2295,69 @@
     .footer_bottom_terms_sec>li {
         padding: 0px 5px;
     }
+
+    .how_your_organization_sub_card_left,
+    .how_your_organization_sub_card_right {
+        height: auto;
+        min-height: 130px;
+        padding-top: 20px;
+    }
+
+    .how_your_organization_sub_card_left>p,
+    .how_your_organization_sub_card_right>p {
+        display: block;
+        opacity: 1;
+        max-height: unset;
+        padding-top: 10px;
+    }
+
+    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left>p,
+    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right>p {
+
+        padding-top: 10px;
+    }
+
+    .how_your_organization_card_sec_center {
+        display: none;
+    }
+
+    .how_your_organization_card_container {
+        min-height: unset;
+        margin-top: 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .how_your_organization_sub_card_left,
+    .how_your_organization_sub_card_right {
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .how_your_organization_card_sec_left,
+    .how_your_organization_card_sec_right {
+        width: 100%;
+        display: flex;
+        flex-direction: unset;
+        flex-wrap: wrap;
+    }
+
+    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(1)::after,
+    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(2)::after,
+    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(3)::after,
+    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(1)::after,
+    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(2)::after,
+    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(3)::after,
+    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(1)::before,
+    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(2)::before,
+    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(3)::before,
+    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(1)::before,
+    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(2)::before,
+    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(3)::before {
+        display: none;
+    }
+
+
 }
 
 @media screen and (max-width:500px) {
@@ -2243,10 +2444,12 @@
     .what_you_can_do_title_head1>h3,
     .upgraded_to_premium_title_head>h3,
     .download_app_text_sec>h3,
-    .we_have_got_the_answer_title_sec>h3 {
+    .we_have_got_the_answer_title_sec>h3,
+    .how_your_organization_container>h3,
+    .testimonial_title_head>h3 {
 
 
-        font-size: 30px;
+        font-size: 25px;
         line-height: normal;
         letter-spacing: 0.5px;
     }
@@ -2339,7 +2542,7 @@
     .download_app_phone_img_sec {
         width: 100%;
         min-height: 350px;
-        padding-right: 8%;
+        padding-right: 0%;
         overflow: unset;
         height: auto;
     }
@@ -2386,7 +2589,7 @@
 
     .footer_bottom_container {
         flex-direction: column;
-        gap: 5px;
+        gap: 10px;
     }
 
     .footer_download_contact_sec {
@@ -2439,5 +2642,37 @@
         width: 120px;
         right: 10%;
         bottom: 10%;
+    }
+}
+
+@media screen and (max-width:420px) {
+
+    .a_platform_build_for_text_sec>h3,
+    .what_you_can_do_title_head1>h3,
+    .upgraded_to_premium_title_head>h3,
+    .download_app_text_sec>h3,
+    .we_have_got_the_answer_title_sec>h3,
+    .how_your_organization_container>h3,
+    .testimonial_title_head>h3 {
+        font-size: 23px;
+        line-height: normal;
+        letter-spacing: 0.5px;
+    }
+
+    .pg2_text_container>h3 {
+        font-size: 20px;
+        line-height: 30px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .how_your_organization_card_container {
+        margin-top: 20px;
+        gap: 0;
+    }
+
+    .how_your_organization_card_sec_left,
+    .how_your_organization_card_sec_right {
+        padding-top: 20px;
     }
 }

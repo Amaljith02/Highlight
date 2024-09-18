@@ -2402,6 +2402,10 @@
         text-align: center;
     }
 
+    .banner_sub_body_text_sec>p>br {
+        display: none;
+    }
+
     .banner_sub_body {
         min-height: 770px;
         flex-direction: column;
@@ -2425,7 +2429,7 @@
     }
 
     .banner_sub_body_text_sec>h2 {
-        font-size: 31px;
+        font-size: 28px;
         width: 90%;
         font-weight: 400;
         -webkit-text-stroke: 1px #000000;
@@ -2446,7 +2450,7 @@
     }
 
     .header_download_btn {
-        width: 105px;
+        width: 110px;
     }
 
     .pg2_text_container>h3 {

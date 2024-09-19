@@ -184,13 +184,6 @@ only screen and (min-resolution: 1.25dppx) {
         font-size: 30%;
     }
 
-    .swiper-slide {
-        background-size: cover !important;
-        background-position: center !important;
-        object-fit: fill !important;
-        background-repeat: repeat !important;
-
-    }
 
     .special_btn {
         font-size: 11px;

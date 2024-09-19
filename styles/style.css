@@ -72,7 +72,7 @@
     /* font-size: 64px; */
     font-size: 4rem;
     font-weight: 500;
-    -webkit-text-stroke: 1px #000000;
+    /* -webkit-text-stroke: 1px #000000; */
     text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.185);
 }
 
@@ -201,6 +201,7 @@
     font-size: 16px;
     font-weight: 400;
     opacity: 0.8;
+    line-height: normal;
     border-radius: 50px;
     border: 1px solid #fff2ab;
     position: relative;
@@ -487,7 +488,7 @@
     width: 200px;
     position: absolute;
     right: 80%;
-    z-index: 100;
+    z-index: 3;
     top: 50%;
     transform: translateY(-50%) rotate(180deg);
 }
@@ -528,6 +529,7 @@
     display: none;
     opacity: 0;
     height: 0;
+    color: #6B6B6B;
     overflow: hidden;
     transition: all 0.5s ease;
 }
@@ -715,6 +717,7 @@
     font-family: "Poppins-Regular", sans-serif;
     font-size: 16px;
     font-weight: 400;
+    color: #424242;
 }
 
 .testimonial_card_sec {
@@ -925,6 +928,11 @@
     padding-left: 9%;
     padding-bottom: 20px;
     font-size: 14px;
+}
+
+.upgraded_to_premium_tab_card_ul2>li {
+
+    padding-bottom: 12px !important;
 }
 
 .upgraded_to_premium_tab_card_ul2>li::before,
@@ -1286,17 +1294,18 @@
     display: flex;
     gap: 10px;
     align-items: flex-end;
+    flex-wrap: wrap;
+
 }
 
 .footer_download_btn {
     display: block;
-    height: auto;
-
-    width: 110px;
+    height: 35px;
+    min-width: 100px;
 }
 
 .footer_download_btn>img {
-    height: auto;
+    height: 100%;
     width: 100%;
     object-fit: cover;
     display: block;
@@ -1427,6 +1436,12 @@
         line-height: 23px;
     }
 
+    .download_app_container {
+        width: 90%;
+        padding-left: 2% !important;
+        padding-right: 2% !important;
+    }
+
     .how_your_organization_sub_card_right>h5,
     .how_your_organization_sub_card_left>h5 {
         font-size: 22px;
@@ -1523,18 +1538,24 @@
         padding: 9px 28px;
     }
 
+    .what_you_can_do_card>p {
+        font-size: 12px;
+        line-height: normal;
+        font-weight: 400;
+    }
+
     .a_platform_build_for_text_sec>h1 {
         line-height: 50px;
     }
 
+
+
     .download_app_phone_img2 {
         top: unset;
         width: 50%;
-        bottom: -5%;
     }
 
     .download_app_phone_img1 {
-        bottom: -10%;
         left: 5%;
         width: 43%;
     }
@@ -1579,15 +1600,27 @@
         border-bottom: unset;
     }
 
-    /* .how_your_organisation_card_right_lines {
-        width: 200px;
-        right: 90%;
+    .upgraded_to_premium_tab_card_price>h5 {
+        line-height: 30px;
     }
 
-    .how_your_organisation_card_left_lines {
-        width: 200px;
-        left: 90%;
-    } */
+    .testimonial_card {
+        padding-bottom: 0;
+    }
+
+    .testimonial_card_profile_name>p {
+        font-size: 12px;
+        line-height: normal;
+    }
+
+    .footer_download_sec {
+        min-width: 50%;
+    }
+
+    .we_have_got_the_answer_still_have_question_sec>p {
+        font-size: 15px;
+
+    }
 }
 
 @media screen and (max-width: 1366px) {
@@ -2049,6 +2082,12 @@
         flex-wrap: wrap;
     }
 
+    .download_app_container {
+        width: 90%;
+        padding-left: 0% !important;
+        padding-right: 0% !important;
+    }
+
     .what_you_can_do_title_head1 {
         width: 100%;
     }
@@ -2274,6 +2313,12 @@
     .how_your_organization_sub_card_left>h5 {
         font-size: 18px;
         text-align: center;
+    }
+
+    .download_app_container {
+        width: 90%;
+        padding-left: 5% !important;
+        padding-right: 5% !important;
     }
 
     .download_app_text_sec {
@@ -2535,6 +2580,7 @@
 
     .testimonial_container {
         padding-bottom: 60px;
+        background: linear-gradient(123deg, rgba(255, 243, 180, 1) 0%, rgb(255, 251, 232) 34%, rgba(252, 250, 235, 1) 63%, rgb(255, 247, 201) 100%);
     }
 
     .testimonial_card_content>p {

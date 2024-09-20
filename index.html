@@ -1677,6 +1677,7 @@
           logo.classList.add("visible");
           download_btn.forEach((btn) => btn.classList.add("visible"));
           header.style.top = "-50px";
+          logo.style.transform = "scale(0.7)";
         }
 
         // Reset if at the top
@@ -1684,6 +1685,7 @@
           header.classList.remove("visible");
           logo.classList.remove("visible");
           download_btn.forEach((btn) => btn.classList.remove("visible"));
+          logo.style.transform = "scale(1)";
 
           header.style.top = "0%";
         }

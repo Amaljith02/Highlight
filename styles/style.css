@@ -33,11 +33,11 @@
 }
 
 .header_logo.visible {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     filter: invert(1);
     height: auto;
-    width: 120px;
+    /* width: 120px; */
     transition: all 0.3s;
 }
 
@@ -1463,6 +1463,11 @@
         width: 140px;
     }
 
+    /* 
+    .header_logo.visible {
+        width: 110px;
+    } */
+
     .header_download_btn {
         height: unset;
         width: 140px;
@@ -1515,6 +1520,11 @@
 @media screen and (max-width: 1440px) {
     .banner_sub_body {
         min-height: 850px;
+    }
+
+    .header_sec.visible {
+        background-color: rgba(0, 0, 0, 0.753);
+        top: -30px !important;
     }
 
     .banner_sub_body_text_sec>p {
@@ -1809,6 +1819,10 @@
         width: 120px;
     }
 
+    .header_logo.visible {
+        transform: scale(0.8) !important;
+    }
+
     .banner_sub_body {
         min-height: 700px;
     }
@@ -1841,8 +1855,8 @@
         font-size: 15px;
     }
 
-    .how_your_organization_sub_card_right>h5,
-    .how_your_organization_sub_card_left>h5 {
+    .how_your_organization_sub_card_right_data>h5,
+    .how_your_organization_sub_card_lef_datat>h5 {
         font-size: 19px;
     }
 
@@ -1918,8 +1932,12 @@
         min-height: 650px;
     }
 
+    .header_sec.visible {
+        top: -25px !important;
+    }
+
     .header_download_btn {
-        width: 110px;
+        width: 120px;
     }
 
     .a_platform_build_for_text_sec>h1 {
@@ -2486,10 +2504,13 @@
         padding-top: 25px;
     }
 
+    .header_sec.visible {
+        top: -40px !important;
+    }
+
     .header_logo.visible {
-        padding-top: 35px;
-        padding-bottom: 20px;
-        width: 100px;
+        padding-top: 30px;
+        padding-bottom: 10px;
     }
 
     .header_download_btn_sec {

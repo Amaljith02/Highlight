@@ -16,7 +16,7 @@
 }
 
 .header_sec.visible {
-    background-color: rgba(48, 41, 0, 0.753);
+    background-color: rgba(0, 0, 0, 0.753);
     top: -50px;
 }
 
@@ -1962,8 +1962,8 @@
         padding: 0 5%;
     }
 
-    .how_your_organization_sub_card_left>p,
-    .how_your_organization_sub_card_right>p {
+    .how_your_organization_sub_card_left_data>p,
+    .how_your_organization_sub_card_right_data>p {
         font-size: 13px;
         line-height: 20px;
     }
@@ -2103,15 +2103,17 @@
     .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(3)::before,
     .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(1)::before,
     .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(3)::before {
-        height: 120px;
+        height: 120px !important;
     }
 
     .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(1)::after,
     .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left:nth-child(3)::after,
     .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(1)::after,
     .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right:nth-child(3)::after {
-        height: 120px;
+        height: 120px !important;
     }
+
+
 
     .pg2_text_container>h3 {
         line-height: 30px;
@@ -2153,8 +2155,8 @@
         width: 35px;
     }
 
-    .how_your_organization_sub_card_right>h5,
-    .how_your_organization_sub_card_left>h5 {
+    .how_your_organization_sub_card_right_data>h5,
+    .how_your_organization_sub_card_left_data>h5 {
         font-size: 17px;
     }
 
@@ -2174,13 +2176,10 @@
         padding: 3px;
     }
 
-    .how_your_organization_card_sec_left,
-    .how_your_organization_card_sec_right {
-        gap: 20px;
-    }
 
-    .how_your_organization_sub_card_left,
-    .how_your_organization_sub_card_right {
+
+    .how_your_organization_sub_card_left_data,
+    .how_your_organization_sub_card_right_data {
         height: 100px;
     }
 
@@ -2358,8 +2357,8 @@
         font-size: 14px;
     }
 
-    .how_your_organization_sub_card_right>h5,
-    .how_your_organization_sub_card_left>h5 {
+    .how_your_organization_sub_card_right_data>h5,
+    .how_your_organization_sub_card_left_data>h5 {
         font-size: 18px;
         text-align: center;
     }
@@ -2401,15 +2400,17 @@
         padding: 0px 5px;
     }
 
-    .how_your_organization_sub_card_left,
-    .how_your_organization_sub_card_right {
+    .how_your_organization_sub_card_left_data,
+    .how_your_organization_sub_card_right_data {
         height: auto;
         min-height: 130px;
         padding-top: 20px;
     }
 
-    .how_your_organization_sub_card_left>p,
-    .how_your_organization_sub_card_right>p {
+
+
+    .how_your_organization_sub_card_left_data>p,
+    .how_your_organization_sub_card_right_data>p {
         display: block;
         opacity: 1;
         height: auto;
@@ -2419,13 +2420,15 @@
         overflow: visible;
     }
 
-    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left>h5,
-    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right>h5 {
-        padding-bottom: 10px;
+    .how_your_organization_sub_card_left_data:hover.how_your_organization_sub_card_left_data>h5,
+    .how_your_organization_sub_card_right_data:hover.how_your_organization_sub_card_righ_datat>h5 {
+        padding-bottom: 0px;
     }
 
-    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left>p,
-    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right>p {
+
+
+    .how_your_organization_sub_card_left:hover.how_your_organization_sub_card_left_data>p,
+    .how_your_organization_sub_card_right:hover.how_your_organization_sub_card_right_data>p {
         padding-top: 0px;
     }
 
@@ -2437,7 +2440,7 @@
         min-height: unset;
         margin-top: 20px;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 0;
     }
 
     .how_your_organization_sub_card_left,
@@ -2476,13 +2479,17 @@
 }
 
 @media screen and (max-width: 500px) {
-    .header_container {
-        justify-content: center;
-    }
+
 
     .header_container {
         justify-content: center;
         padding-top: 25px;
+    }
+
+    .header_logo.visible {
+        padding-top: 35px;
+        padding-bottom: 20px;
+        width: 100px;
     }
 
     .header_download_btn_sec {

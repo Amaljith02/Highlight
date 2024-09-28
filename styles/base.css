@@ -1280,7 +1280,7 @@ h6 {
 
 @media only screen and (max-width: 1024px) {
     .pb_100 {
-        padding-bottom: 80px;
+        padding-bottom: 75px;
     }
 }
 
@@ -1435,6 +1435,11 @@ h6 {
         padding-bottom: 70px;
     }
 }
+@media only screen and (max-width: 768px) {
+    .pb_120 {
+        padding-bottom: 60px;
+    }
+}
 
 @media only screen and (max-width: 600px) {
     .pb_120 {
@@ -1467,6 +1472,12 @@ h6 {
 @media only screen and (max-width: 1024px) {
     .pt_120 {
         padding-top: 70px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .pt_120 {
+        padding-top: 60px;
     }
 }
 

@@ -93,6 +93,11 @@
     min-height: 1000px;
 }
 
+.banner_sub_body_logo_sec {
+
+    display: none;
+}
+
 .banner_sub_body_text_sec {
     width: 50%;
 }
@@ -274,7 +279,7 @@
 
 .what_you_can_do_title_sec {
     width: 100%;
-    display: flex;
+    /* display: flex; */
 }
 
 /* .what_you_can_do_title_head1 {
@@ -300,9 +305,10 @@
 
 .what_you_can_do_title_head2>p {
     color: #808080;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 400;
     line-height: normal;
+    text-align: left;
 }
 
 .what_you_can_do_head_download_btn {
@@ -313,7 +319,6 @@
     padding: 11px 43px;
     text-decoration: none;
     font-size: 16px;
-    /* font-weight: 500; */
     font-weight: 400;
     color: #b7bb32;
     font-family: "Poppins";
@@ -3003,6 +3008,7 @@
     .header_container {
         justify-content: center;
         padding-top: 25px;
+        display: none;
     }
 
     .header_sec.visible {
@@ -3039,10 +3045,24 @@
         padding-right: 0 !important;
     }
 
+    .banner_sub_body_logo_sec {
+        display: flex;
+        padding-bottom: 100px;
+        width: 50%;
+    }
+
+    .banner_sub_body_logo_sec>img {
+        display: block;
+        object-fit: cover;
+        height: auto;
+        width: 100%;
+    }
+
     .banner_sub_body_text_sec {
         width: 100%;
         text-align: center;
-        display: flex;
+        /* display: flex; */
+        display: none;
         flex-direction: column;
         padding-bottom: 20px;
         padding-top: 40px;
@@ -3073,7 +3093,7 @@
     }
 
     .header_download_btn {
-        width: 110px;
+        width: 120px;
     }
 
     .pg2_text_container>h3 {
